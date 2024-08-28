@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, #0c0908, #342a87); 
+    height: 100%;
+    width: 100%;
+    scrollbar-width: thin;
+  scrollbar-color: #555 #2e2e2e;
+  }
+  /* WebKit Browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 6px;
+  border: 2px solid #1f1e1e;
+}
+
+
+  

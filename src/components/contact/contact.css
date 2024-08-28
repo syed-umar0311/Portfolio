@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+    background-color: transparent;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: transparent; /* Light background for the entire contact section */
+}
+
+.us {
+    margin-bottom: 70px;
+    width: 65%;
+     /* Ensures it doesn't stretch too much on large screens */
+    height: 550px; /* Auto height to accommodate content */
+    padding: 20px; /* Added padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(2.4px);
+    background-image: linear-gradient(45deg, rgba(82, 55, 145, 0.568), rgba(140, 63, 189, 0.541));
+}
+
+.us h2 {
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    font-style: initial;
+    backdrop-filter: blur(1px);
+    background-image: linear-gradient(45deg, rgba(133, 58, 148, 0.596), rgba(50,249,176,0.7));
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.us input[type="name"],
+.us input[type="email"] {
+    backdrop-filter: blur(5px);
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs */
+    border: 2px solid #ccc; /* Light border for inputs */
+    border-radius: 10px; /* Rounded corners for inputs */
+    font-size: 16px;
+    background-color: #cccccc73;
+}
+.us input[type="text"]{
+    backdrop-filter: blur(5px);
+    width: 80%;
+    height: 200px;
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs */
+    border: 2px solid #ccccccd2; /* Light border for inputs */
+    border-radius: 10px; /* Rounded corners for inputs */
+    font-size: 16px;
+    background-color: #cccccc7e;
+}
+
+.us button.send {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.us h5{
+   align-self: self-start;
+   margin-left: 100px;
+   font-weight: 600;
+   margin-bottom: 0%;
+}
+
+.us button.send:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+/* The alert container */
+.custom-alert {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    backdrop-filter: blur(1px);
+    background-image: linear-gradient(45deg, rgba(133, 58, 148, 0.562), rgba(50, 249, 176, 0.301));
+   /* Black with opacity for overlay */
+    z-index: 1000; /* Sit on top */
+    align-items: center; /* Center the alert content vertically */
+    justify-content: center; /* Center the alert content horizontally */
+  }
+  
+  /* Alert content */
+  .custom-alert-content {
+    backdrop-filter: blur(1px);
+    background-image: linear-gradient(45deg, rgba(178, 72, 199, 0.692), rgba(208, 91, 231, 0.801));
+   
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Position relative for close button */
+    text-align: center;
+  }
+  
+  /* The close button */
+  .close-alert {
+    top: 0px;
+    z-index: +1;
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+   
+    cursor: pointer;
+  }
+  
+  .close-alert:hover,
+  .close-alert:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  @media (max-width:800px){
+    .contact {
+        margin-top: 50px;
+        width: 500px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        background-color: transparent; /* Light background for the entire contact section */
+    }
+    .us {
+        margin-bottom: 50px;
+        width: 450px;
+        height: 650px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10px; /* Rounded corners for a softer look */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        backdrop-filter: blur(2.4px);
+        background-image: linear-gradient(45deg, rgba(82, 55, 145, 0.568), rgba(140, 63, 189, 0.541));
+    }
+
+  }
+  

@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: transparent;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+}
+
+.inner {
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 70%;
+  height: 45px;
+  background-color: #aa4bc7;
+  border-radius: 20px;
+  opacity: 0.75;
+  animation: fadeIn 1s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.inner a {
+  color: black;
+  font-weight: 600;
+  font-size: large;
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.inner a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.download{
+  height: 40px;
+  width: 20%;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgb(150, 150, 250);
+  cursor: pointer;
+}
+.download:hover{
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 800px) {
+  .main {
+    width: 500px;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .inner {
+    width: 90%;
+    flex-direction: row; /* Keep items in a row */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    justify-content: space-around; /* Distribute items evenly */
+    gap: 10px; /* Reduce gap between items */
+    height: auto;
+    border-radius: 10px;
+    background-color: #aa4bc7;
+  }
+
+  .inner a {
+    font-size: medium; /* Adjust font size for better fit */
+  }
+
+  .download {
+    font-size: 14px;
+    width: 30%; /* Adjust button size for smaller screens */
+  }
+}
